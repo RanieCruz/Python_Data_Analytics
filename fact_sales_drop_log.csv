@@ -1,0 +1,9 @@
+step,rows_before,rows_after,rows_dropped
+dedupe customers,5050,5000,50
+dedupe products,800,800,0
+dedupe orders,15075,15000,75
+dedupe order_items,37763,37501,262
+orphan orders (customer_id not in customers),15000,14957,43
+items with null/non-positive qty or null price,37501,34912,2589
+orphan items (product_id not in products),34912,34794,118
+orphan items (order_id not in valid orders),34794,34689,105
